@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About_Page</title>
+    <link rel="stylesheet" href="About.css">
+</head>
+<body>
+    <header>
+        <div class="navBar">
+            <div class="logo">
+                <img src="images/shoeIcon.png">
+                <h3>Island's Sprinter</h3>
+            </div>
+                <ul class="Options">
+                    <li><a href="HOME3.html">Dashboard</a></li>
+                    <li><a href="DashboardMen.html">Men</a></li>
+                    <li><a href="DashboardWomen.html">Women</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                </ul>
+                <div class="Profile">
+                    <button onclick="toggleForm('profile')" id="profile-button"><img src="images/profile.png" alt="profile" id="imgbtn"></button>
+                </div>
+                <div class="toggle_btn">
+                    <i class="MenuBar"><img src="images/menu.png"></i>
+                </div>
+        </div>
+        <div class="Dropdown">
+                <li><img src="images/profile.png" alt="profile" id="imgbtn"></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="DashboardMen.html">Men</a></li>
+                <li><a href="DashboardWomen.html">Women</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><button onclick="toggleForm('profile')" class="action-btn">View Profile</button></li>
+        </div>
+</header>
+<div class="ProfileView" id="ProfView">
+    <button onclick="toggleForm('exit')"><img src="images/exit.png" class="ex"></button>
+    <iframe  src="Profile.html"  class="profile-iframe"></iframe>
+</div>
+    <div class="Main_Content">
+        <div class="Model">
+            <h1>ISLAND'S<br>&nbsp; &nbsp;SPRINTER</h1>
+        <img src="images/bgShoe.png">
+        </div>
+        <div class="text">
+            <h2>about us</h2>
+            <p>The Island's Sprinter is a licensed<br>
+            distributor of different shoe <b>BRANDS</b><br>
+            including <sup>NIKE , ADDIDAS, JORDAN, CROCS</sup> and many<br>
+            more brands. Our Company is located at<br>
+            Dasmarinas Techno Park. We also supply to some<br> 
+            small retailers. Our aim is to provide services<br> that ensures
+            Quality in a affordable prices.</p>
+            <div class="TextInner">
+                <h3>For Inquiries</h3>
+                <p><img src="images/location.png"> Techno Park Paliparan 1 <br>
+                Dasmarinas, Cavite</p>
+                <p> <img src="images/contact-us.png">+093-567-4586 </p>
+            </div>
+            
+        </div>
+    </div>
+    <footer class="mainFoot">
+        <div class="footer1">
+            <h5 class="developer">Designed by MAYORES, EUGENE – BSCS-22M1 for ICT 008 Final Project.”</h5>
+            <div class="socialMedia">
+            <ul>
+                <h4>Follow Us</h4>
+               <li> <a href="#"><img src="images/fb.png"></a></li>
+               <li> <a href="#"><img src="images/tiktok.png"></a></li>
+               <li> <a href="#"><img src="images/twitter.png"></a></li>
+               <li> <a href="#"><img src="images/instagram.png"></a></li>
+            </ul>
+            </div>
+            <div class="contact">
+                <h4>Call Us</h4>
+                <h5>+639-098</h5>
+            </div>
+        </div>
+    
+        <div class="copyright">
+            <p>&copy; 2024 Island's Sprinter. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="Login.js"></script>
+</body>
+</html>

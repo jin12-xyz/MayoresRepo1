@@ -1,0 +1,75 @@
+@font-face{
+    font-family: 'Lastica';
+    src: url('Font/Lastica.ttf') format('Truetype');
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.form{
+    border-top: 10px solid #2284ae;
+    width: 300px;
+    height: 500px;
+    top:20px;
+    left:auto;
+    right:50px;
+    backdrop-filter:blur(5px);
+    background-color:transparent;
+    border-radius: 10px;
+    padding: 25px;
+    color:white;
+}
+.form .h2{
+    text-align:center;
+    padding:10px;
+    color:yellow;
+    background-color:black;
+    border-radius:10px;
+    box-shadow: 1px 1px 3px white;
+}
+.form input{
+    border-top:none;
+    border-left: none;
+    border-right:none;
+    border-bottom:2px solid #fff;
+    width:220px;
+    height:40px;
+    background:transparent;
+    margin-top:30px;
+    font-size:15px;
+    color: #fff;
+}
+.btn5{
+    height:30px;
+    width:150px;
+    margin-top:50px;
+    margin-left:50px;
+    margin-right:auto;
+    border-radius:25px;
+    background-image:linear-gradient(180deg,#0c1b27,#2284ae);
+    color: #fff;
+}
+.btn5 a{
+    text-decoration: none;
+    color: inherit;
+}
+.form placeholder{
+    background-color: transparent;
+}
+.form p{
+    margin-top:20px;
+    margin-left:auto;
+    display: inline-block;
+    color:white;
+    font-size: 10px;
+}
+.form .atag{
+    text-decoration:none;
+    display: block;
+    color: blue;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}

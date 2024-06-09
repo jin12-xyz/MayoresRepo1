@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home3</title>
+    <link rel="stylesheet" href="HOME3.css">
+</head>
+<body>
+    <header>
+            <div class="navBar">
+                <div class="logo">
+                    <img src="images/shoeIcon.png">
+                    <h3>Island's Sprinter</h3>
+                </div>
+                    <ul class="Options">
+                        <li><a href="HOME3.html">Dashboard</a></li>
+                        <li><a href="DashboardMen.html">Men</a></li>
+                        <li><a href="DashboardWomen.html">Women</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                    </ul>
+                    <div>
+                        <button onclick="toggleForm('login')" class="action-btn">Log-in</button>
+                        <button onclick="toggleForm('register')" class="action-btn">Register</button>
+                    </div>
+                    <div class="Profile">
+                        <button onclick="toggleForm('profile')" id="profile-button"><img src="images/profile.png" alt="profile" id="imgbtn"></button>
+                    </div>
+                    <div class="toggle_btn">
+                        <i class="MenuBar"><img src="images/menu.png"></i>
+                    </div>
+            </div>
+            <div class="Dropdown">
+                    <li><button onclick="toggleForm('profile')" id="profile-button"><img src="images/profile.png" alt="profile" id="imgbtn"></button></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="DashboardMen.html">Men</a></li>
+                    <li><a href="DashboardWomen.html">Women</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><button onclick="toggleForm('login')" class="action-btn">Log-in</button></li>
+                    <li><button onclick="toggleForm('register')" class="action-btn">Register</button></li>
+            </div>
+    </header>
+    <div class="ProfileView" id="ProfView">
+        <button onclick="toggleForm('exit')"><img src="images/exit.png" class="ex"></button>
+        <iframe  src="Profile.html"  class="profile-iframe"></iframe>
+    </div>
+    <div class="LoginView" id="Log_form">
+        <button onclick="toggleForm('exit')"><img src="images/exit.png" class="ex"></button>
+        <iframe src="LoginFrame.html" class="lgn"></iframe>
+    </div>
+    <div class="RegView" id="Reg_form">
+        <button onclick="toggleForm('exit')"><img src="images/exit.png" class="ex"></button>
+        <iframe src="RegFrame.html" class="Reg"></iframe>
+    </div>
+        <div class="Main">
+            <div class="content1">
+                <div class="column1">
+                    <h1>BREAK YOUR <span>LIMITs</span></h1>
+                    <img src="images/sprinter3.png" id="sprinter">
+                </div>
+                <div class="column2">
+                    <h3>SNEAKER</h3>
+                    <div class="columnInner">   
+                    <p>Sneaker companies encourage this<br>
+                        trend by producing rare sneakers<br>
+                        in limited numbers, often at very high<br>
+                        retail prices. Artistically-modified<br>
+                        sneakers can sell for<br> upwards of $1000 at exclusive</p>
+                        <br><br><br><br>
+                    </div>
+                    <h4>DURABLE</h4>
+                    <div class="columnInner">
+                    
+                    <p>The benefits of running in <br>
+                        the morning for the health of the body<br>
+                         need not be doubted. When done regularly,<br>
+                         running in the morning can<br> increase energy and stamina </p>
+                    </div>
+                </div>
+                <div class="slowfade">
+                    <div class="slide">
+                        <a href="https://www.capital.com.ph" class="btn"><img src="images/basket.png" id="cart"> add to cart</a>
+                        <div class="description">
+                            <h4>Sprinter Pro</h4>
+                            <p>Price: $300</p>
+                        </div>
+                        <div class="content">
+                            <img src="images/model2.png">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.capital.com.ph" class="btn"><img src="images/basket.png" id="cart"> add to cart</a>
+                        <div class="description">
+                            <h4>Sprinter Pro-Max</h4>
+                            <p>Price: $200</p>
+                        </div>
+                        <div class="content">
+                            <img src="images/model1.png">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.capital.com.ph" class="btn"><img src="images/basket.png" id="cart"> add to cart</a>
+                        <div class="description">
+                            <h4>Sprinter Air</h4>
+                            <p>Price: $150</p>
+                        </div>
+                        <div class="content">
+                            <img src="images/model3.png">
+                        </div>
+                    </div>
+                    <div class="slide">
+                    <a href="https://www.capital.com.ph" class="btn"><img src="images/basket.png" id="cart"> add to cart</a>
+                        <div class="description">
+                            <h4>Sprinter Doom</h4>
+                            <p>Price: $600</p>
+                        </div>
+                        <div class="content">
+                            <img src="images/model4.png">
+                        </div>
+                    </div>
+                    <a href="#" class="btn2">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+        <footer class="mainFoot">
+            <div class="footer1">
+                <h5 class="developer">Designed by MAYORES, EUGENE – BSCS-22M1 for ICT 008 Final Project.”</h5>
+                <div class="socialMedia">
+                <ul>
+                    <h4>Follow Us</h4>
+                   <li> <a href="#"><img src="images/fb.png"></a></li>
+                   <li> <a href="#"><img src="images/tiktok.png"></a></li>
+                   <li> <a href="#"><img src="images/twitter.png"></a></li>
+                   <li> <a href="#"><img src="images/instagram.png"></a></li>
+                </ul>
+                </div>
+                <div class="contact">
+                    <h4>Call Us</h4>
+                    <h5>+639-098</h5>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Island's Sprinter. All rights reserved.</p>
+            </div>
+        </footer>
+   <script src="Login2.js"></script>
+</body>
+</html>

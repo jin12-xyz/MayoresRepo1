@@ -1,0 +1,385 @@
+@font-face{
+    font-family: 'Lastica';
+    src: url('Font/Lastica.ttf') format('Truetype');
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-repeat: no-repeat;
+    background-image:linear-gradient(to bottom right,#0097b2,#132839, rgb(79, 29, 29));
+    background-size: cover;
+    font-family: 'Lastica';
+    background-position: center;
+}
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color:#fff;
+    font-size: 1rem;
+}
+a:hover{
+    color:yellow;
+}
+header{
+    position:relative;
+    padding:4rem 0.5rem;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.navBar{
+    width: 100%;
+    height:fit-content;
+    margin:0 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border:2px solid wite;
+}
+.navBar .logo{
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:#fff;
+    align-items: center;
+    margin-left:15px;
+    
+}
+.logo h3{
+    padding-left: 10px;
+    letter-spacing: 2px;
+}
+.navBar .logo img{
+    height: 50px;
+    background-color:#0097b2;
+    border-radius:50px;
+}
+.navBar .Options{
+    display:flex;
+    gap:2rem;
+}
+.navBar .toggle_btn{
+    color:#fff;
+    font-size: 1.5rem;
+    cursor:pointer;
+    display: none;
+    
+}
+.toggle_btn .MenuBar img{
+    height: 20px;
+    background-color: #fff;
+}
+.action-btn{
+    background-color: yellow;
+    color: black;
+    padding:0.5rem 1rem;
+    border:none;
+    border-radius:20px;
+    font-size:0.8rem;
+    font-weight:bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.action-btn:hover{
+    scale:1.05;
+    color:black;
+}
+.action-btn:active{
+    scale:0.95;
+}
+/*Form Login/Register */
+iframe{
+    border:1px solid white;
+}
+.ProfileView{
+    position: absolute;
+    display: none;
+    width: 300px;
+    height: 410px;
+    top:25%;
+    left:auto;
+    right:100px;
+    backdrop-filter:blur(25px);
+    background-color:transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+    border:1px solid white;
+
+}
+.ProfileView{
+    width: 340px;
+    height:400px;
+    left:auto;
+    right:50px;
+}
+#imgbtn{
+    border-radius: 50px;
+    height: auto;
+    width:50px;
+    background-color:white;
+}
+#profile-button{
+    background-color: transparent;
+    border-radius: 50px;
+    border:none;
+}
+#profile-button :hover{
+    background-color:#0097b2;
+}
+.ProfileView iframe{
+    height:400px;
+    width:340px;
+    border-radius: 10px;
+    border-color:yellow;
+    background-color: black;
+}
+.ex{
+    height: 25px;
+    background-color: red;
+    border-radius: 10px;
+}
+.ProfileView button{
+    position: absolute;
+    background-color: transparent;
+    margin-top: 0%;
+    bottom:auto;
+    left:0px;
+    margin-left: 0%;
+    right:auto;
+    z-index:1;
+    border-radius: 10px;
+    border: none;
+}
+
+/*Dropdown*/
+.Dropdown{
+    display: none;
+    position:absolute;
+    right:2rem;
+    top:70px;
+    width:300px;
+    height:0px;
+    background-color: black, 0.1;
+    backdrop-filter: blur(15px);
+    border-radius:10px;
+    overflow:hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.Dropdown.open{
+    height: 300px;
+}
+.Dropdown li{
+    padding:0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Dropdown .action-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/*Responsive Design*/
+@media screen and (max-width: 720px){
+    .navBar .Options,
+    .navBar .action-btn, .navBar .Profile{
+        display:none;
+    }
+
+    .navBar .toggle_btn{
+        display: block;
+    }
+    .Dropdown{
+        display: block;
+        z-index: 1;
+    }
+}
+@media (max-width:576px){
+    .Dropdown{
+        left:2rem;
+        width: unset;
+    }
+}
+.Main_Content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    padding-top:50px;
+}
+.Main_Content h1{
+   color:#f1f5f6;
+   font-size: 5vw;
+   left:250px;
+   margin-top:auto;
+   margin-bottom: 250px;
+   position: absolute;
+   text-shadow:10px 5px 20px black;
+   font-weight:bolder;
+}
+.Main_Content img {
+    background-color: transparent;
+    height: auto;
+    width:50vw;
+    z-index: -1;
+}
+.Main_Content .Model{
+    width: 50%;
+}
+.Main_Content .text{
+    width: 50%;
+    color:white;
+    margin-left:150px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.Main_Content p{
+    font-size:1vw;
+}
+.Main_Content h2{
+    font-family:'Lastica';
+    color:yellow;
+    letter-spacing:3px;
+    text-shadow: 2px 2px 5px black;
+    font-size: 1vw;
+}
+.Main_Content h3{
+    margin-top:20px;
+    font-family:'Lastica';
+    color:yellow;
+    letter-spacing:3px;
+    text-shadow: 2px 2px 5px black;
+    font-size: 3vw;
+}
+.text img{
+    margin-top:30px;
+    height:30px;
+    width:auto;
+    background-color: #fff;
+    border-radius:25px;
+    padding:5px;
+}
+.TextInner img{
+    width: 5vw;
+    height:auto;
+}
+/*Responsive */
+@media screen and (max-width: 720px){
+    .Main_Content h1{
+        left:20vw;
+        top:50vw;
+    }
+    .text img{
+        margin-left:auto;
+        margin-right:30vw;
+    }
+    .Main_Content .text{
+        margin-left:50px;
+    }
+}
+/*Footer Section */
+.mainFoot{
+    background-color: black;
+    height:150px;
+}
+.footer1{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height:100px;
+    width: auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+    background-color: black;
+}
+.socialMedia{
+    order:2;
+    margin-right:50px;
+}
+.socialMedia ul{
+    padding:0;
+}
+.socialMedia ul li{
+    display: inline-block;
+    list-style: none;
+    padding:5px;
+}
+.footer1 .socialMedia img{
+    border-radius:50px;
+    background-color: #fff;
+    width:20px;
+}
+.contact{
+    margin-left:auto;
+    margin-right:50px;
+}
+.copyright{
+    border-top:1px solid white;
+    color:white;
+    font-family:arial;
+    text-align: center;
+    padding:20px;
+}
+.mainFoot{
+    background-color: black;
+    height:150px;
+}
+
+.footer1{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height:100px;
+    width: auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+    background-color: black;
+}
+.footer1 .developer{
+    margin-left:10px;
+}
+.socialMedia{
+    order:2;
+    margin-right:50px;
+}
+.socialMedia ul{
+    padding:0;
+}
+.socialMedia ul li{
+    display: inline-block;
+    list-style: none;
+    padding:5px;
+}
+.footer1 .socialMedia img{
+    border-radius:50px;
+    background-color: #fff;
+    width:20px;
+}
+.contact{
+    margin-left:auto;
+    margin-right:50px;
+}
+.copyright{
+    border-top:1px solid white;
+    color:white;
+    font-family:arial;
+    text-align: center;
+    padding:20px;
+}
+/*Responsive Footer*/
+@media screen and (max-width: 720px){
+    .footer1{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

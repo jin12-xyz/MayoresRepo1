@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.MainBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ProfileAcct{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 350px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-shadow: 5px 1px 5px black;
+    background-color: transparent;
+    
+}
+.ProfileAcct h2{
+    text-align:center;
+    padding:10px;
+    color:yellow;
+    background-color:black;
+    border-radius:10px;
+    box-shadow: 1px 1px 3px white;
+}
+.ProfileAcct .prf{
+  padding:20px 10px;
+  border-bottom: 2px solid rgb(244, 240, 240);
+  margin-top: 20px;
+}
+.ProfileAcct img{
+  height:50px;
+  margin-right: 400px;
+  margin-left:auto;
+  background-color: aqua;
+  border-radius:50px;
+}
