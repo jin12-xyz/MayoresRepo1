@@ -211,34 +211,37 @@ iframe{
 .Main_Content{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:flex-start;
     padding-bottom: 100px;
-    padding-top:50px;
+    margin-left: 5%;
+    margin-top:20px;
 }
+
 .Main_Content h1{
    color:#f1f5f6;
-   font-size: 5vw;
+   font-size: calc(3.5vw + 1em);
    left:250px;
    margin-top:auto;
-   margin-bottom: 250px;
-   position: absolute;
    text-shadow:10px 5px 20px black;
    font-weight:bolder;
+   
 }
 .Main_Content img {
     background-color: transparent;
     height: auto;
-    width:50vw;
+    width:40vw;
     z-index: -1;
 }
 .Main_Content .Model{
     width: 50%;
+    margin:0px;
 }
 .Main_Content .text{
     width: 50%;
     color:white;
     margin-left:150px;
     font-family: 'Courier New', Courier, monospace;
+    margin:0px;
 }
 .Main_Content p{
     font-size:1vw;
@@ -272,16 +275,43 @@ iframe{
 }
 /*Responsive */
 @media screen and (max-width: 720px){
-    .Main_Content h1{
+    .Main_Content {
         left:20vw;
         top:50vw;
+        color: aquamarine;
+        flex-direction: column;
+
     }
-    .text img{
-        margin-left:auto;
-        margin-right:30vw;
-    }
+    .Main_Content .Model,
     .Main_Content .text{
-        margin-left:50px;
+    width: 100%;
+    margin-left: 0px;
+
+  }
+  .Main_Content .Model img {
+    width: 80%; /* Adjust the width as a percentage of the containing element */
+    height: auto; /* Keep the height proportional to the width */
+    margin-left: 10%;
+  }
+
+  .Main_Content h1 {
+    /* Adjust font-size to be slightly smaller on smaller screens */
+    font-size: calc(4vw + 1em);
+    margin-left:20%;
+  }
+  .Main_Content h1::after {
+    left: 10vw; /* Adjusted from 20vw for better positioning */
+    top: 25vw; /* Adjusted from 50vw for better positioning */
+    font-size: 15vw; /* Adjusted from 30vw to not be too large */
+  }
+    .text img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Main_Content ::after{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 }
 /*Footer Section */
