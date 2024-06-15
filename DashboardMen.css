@@ -241,7 +241,7 @@ header{
     border:none;
   }
   /* responsive side panel*/
-  @media (max-width: 768px), screen and (max-width:576px) {
+  @media screen and (max-width: 768px), screen and (max-width:576px) {
     .side-panel {
         width: 90vw; 
         height: auto;

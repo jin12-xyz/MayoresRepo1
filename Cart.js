@@ -193,9 +193,9 @@ function displayCart(){
             </div>
             <div class="price">$${item.price}</div>
             <div class="quantity"> 
-                <ion-icon class="decreaseQuantity" name="caret-back-outline" data-id="${index}"></ion-icon>
+                <ion-icon class="decreaseQuantity" name="remove-outline" data-id="${index}"></ion-icon>
                 <span>${item.inCart}</span>
-                <ion-icon class="increaseQuantity" name="caret-forward-outline" data-id="${index}"></ion-icon>
+                <ion-icon class="increaseQuantity" name="add-outline" data-id="${index}"></ion-icon>
             </div>
             <div class="total">
             $${item.inCart * item.price}
