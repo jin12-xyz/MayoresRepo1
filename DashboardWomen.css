@@ -254,6 +254,13 @@ header{
         margin-left:110px;
         right:0px;
     }
+    .side-panel .CartFrame{
+        left:0px;
+        right:auto;
+    }
+    .side-panel .CartFrame iframe{
+        margin-left:0px;
+    }
 }
 
 /*Dropdown*/

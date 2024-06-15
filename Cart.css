@@ -70,7 +70,7 @@ header .Cart{
 .productContainer ion-icon{
     font-size:25px;
     color:blue;
-    margin-left:5px;
+    margin-left:10px;
     margin-right:10px;
     cursor:pointer;
 }
@@ -145,5 +145,24 @@ header .Cart{
     width:10%;
 }
 @media screen and (max-width: 768px), screen and (max-width:576px){
-    
+    .products{
+        margin-left:0px;
+        margin-right: auto;
+        right:auto;
+        left:0px;
+        width:100%;
+       
+    }
+    .productContainer{
+        margin-left:0px;
+        right:auto;
+       
+    }
+    .productHeader{
+        width:98%;
+        margin-left:0px;
+        margin-right: auto;
+        right:auto;
+        left:0px;
+    }
 }
