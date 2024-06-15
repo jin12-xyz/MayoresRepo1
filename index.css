@@ -180,7 +180,6 @@ header{
     z-index:1;
     border-radius: 10px;
     border: none;
-
 }
 
 
@@ -225,6 +224,9 @@ header{
     .Dropdown{
         display: block;
         z-index: 1;
+    }
+    .LoginView, .RegView, .ProfileView{
+        left:25vw;
     }
 }
 @media (max-width:576px){
