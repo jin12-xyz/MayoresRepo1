@@ -376,7 +376,7 @@ header{
 }
 .slowfade .btn2{
     position: absolute;
-    background-color:red;
+    background-color:yellow;
     color:white;
     text-shadow: 5px 5px 5px black;
     padding:20px 10px;
