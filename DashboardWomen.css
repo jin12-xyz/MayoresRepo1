@@ -251,7 +251,10 @@ header{
     .side-panel .panelHead{
         height:15%;
     }
-    
+    .Cart_Profile{
+        left:auto;
+        margin-right:20px;
+    }
 }
 
 /*Dropdown*/
