@@ -1,11 +1,11 @@
-// Define the login function
+
 function login(username, password) {
-    // Store the username and password in local storage
+   
     localStorage.setItem("username", username);
     localStorage.setItem("password", password);
 }
 
-// Define the toggleForm function
+// ToggleForm function
 function toggleForm(TypeForm){
     const logForm = document.getElementById('Log_form');
     const regForm = document.getElementById('Reg_form');
@@ -52,13 +52,13 @@ if (toggleBtn) {
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("Reg_form").addEventListener("submit", (e) => {
         e.preventDefault();
-        const name = document.getElementById("regName").value;
-        const address = document.getElementById("regAddres").value;
+        const Fname = document.getElementById("regName").value;
+        const address = document.getElementById("regAddress").value;
         const username = document.getElementById("regUname").value;
         const password = document.getElementById("regPass").value;
 
         // Validate input fields
-        if (name === "" || address === "" || username === "" || password === "") {
+        if (Fname === "" || address === "" || username === "" || password === "") {
             alert("Please fill in all fields.");
             return;
         }
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Store user data in local storage
         localStorage.setItem("username", username);
         localStorage.setItem("password", password);
-        localStorage.setItem("name", name);
+        localStorage.setItem("name", Fname);
         localStorage.setItem("address", address);
 
         // Log in user
@@ -78,8 +78,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Add event listener to login form
-const logForm = document.getElementById("Log_form");
-logForm.addEventListener("submit", (e) => {
+document.addEventListener('DOMContentLoaded', function() {
+document.getElementById("Log_form").addEventListener("submit", (e) => {
     e.preventDefault();
     const username = document.getElementById("logUsername").value;
     const password = document.getElementById("logPword").value;
@@ -98,3 +98,23 @@ logForm.addEventListener("submit", (e) => {
         alert("Invalid username or password.");
     }
 });
+
+});
+
+function displayProfile() {
+    // Retrieve user data from local storage
+    const name = localStorage.getItem("name");
+    const username = localStorage.getItem("username");
+    const address = localStorage.getItem("address");
+
+    // Get the HTML elements by their IDs
+    let UserFname = document.getElementById('name');
+    let UserUsername = document.getElementById('username');
+    let UserAddress = document.getElementById('Address');
+
+    // Set the innerHTML of the elements to the retrieved values
+    UserFname.innerHTML = "NAME: " + name;
+    UserUsername.innerHTML = "USERNAME: " + username;
+    UserAddress.innerHTML = "ADDRESS: " + address;
+}
+document.addEventListener('DOMContentLoaded', displayProfile);

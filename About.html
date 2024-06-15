@@ -14,11 +14,15 @@
                 <h3>Island's Sprinter</h3>
             </div>
                 <ul class="Options">
-                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="index.html">HOME</a></li>
                     <li><a href="DashboardMen.html">Men</a></li>
                     <li><a href="DashboardWomen.html">Women</a></li>
                     <li><a href="About.html">About Us</a></li>
                 </ul>
+                <div class="Cart_Profile">
+                    <div class="Cart">
+                        <button class="side-panel-toggle" type="button"><img src="images/cart.png"><span>0</span></button>
+                    </div>
                 <div class="Profile">
                     <button onclick="toggleForm('profile')" id="profile-button"><img src="images/profile.png" alt="profile" id="imgbtn"></button>
                 </div>
@@ -28,7 +32,7 @@
         </div>
         <div class="Dropdown">
                 <li><img src="images/profile.png" alt="profile" id="imgbtn"></li>
-                <li><a href="index.html">Shop</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="DashboardMen.html">Men</a></li>
                 <li><a href="DashboardWomen.html">Women</a></li>
                 <li><a href="About.html">About Us</a></li>
@@ -39,7 +43,13 @@
     <button onclick="toggleForm('exit')"><img src="images/exit.png" class="ex"></button>
     <iframe  src="Profile.html"  class="profile-iframe"></iframe>
 </div>
-    <div class="Main_Content">
+    <div class="MainBody">
+        <div class="side-panel">
+            <div class="panelHead"></div>
+            <div class="CartFrame">
+                <iframe src="Cart.html" class="cart-frame" ></iframe>
+            </div>
+        </div>
         <div class="Model">
             <h1>ISLAND'S<br>&nbsp; &nbsp;SPRINTER</h1>
         <img src="images/bgShoe.png">
@@ -85,5 +95,7 @@
         </div>
     </footer>
     <script src="Login.js"></script>
+    <script src="Cart.js"></script>
+    <script src="ItemDetails.js"></script>
 </body>
 </html>

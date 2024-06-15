@@ -14,21 +14,26 @@
                 <h3>Island's Sprinter</h3>
             </div>
                 <ul class="Options">
-                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="index.html">HOME</a></li>
                     <li><a href="DashboardMen.html">Men</a></li>
                     <li><a href="DashboardWomen.html">Women</a></li>
                     <li><a href="About.html">About Us</a></li>
                 </ul>
+                <div class="Cart_Profile">
+                <div class="Cart">
+                    <button class="side-panel-toggle" type="button"><img src="images/cart.png"><span>0</span></button>
+                </div>
                 <div class="Profile">
                     <button onclick="toggleForm('profile')" id="profile-button"><img src="images/profile.png" alt="profile" id="imgbtn"></button>
                 </div>
+            </div>
                 <div class="toggle_btn">
                     <i class="MenuBar"><img src="images/menu.png"></i>
                 </div>
         </div>
         <div class="Dropdown">
                 <li><img src="images/profile.png" alt="profile" id="imgbtn"></li>
-                <li><a href="index.html">Shop</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="DashboardMen.html">Men</a></li>
                 <li><a href="DashboardWomen.html">Women</a></li>
                 <li><a href="About.html">About Us</a></li>
@@ -39,59 +44,115 @@
     <button onclick="toggleForm('exit')"><img src="images/exit.png" class="ex"></button>
     <iframe  src="Profile.html"  class="profile-iframe"></iframe>
 </div>
-    <div class="MainBody">
+<!----Change1--->
+    <div class="MainBody ">
+        <div class="side-panel">
+            <div class="panelHead"></div>
+            <div class="CartFrame">
+                <iframe src="Cart.html" class="cart-frame" ></iframe>
+            </div>
+        </div>
         <div class="Row">
             <h1>Men's Sport Shoe</h1>
             <div class="Row1">
                 <div class="RowItem1">
-                    <img src="shopping/shoe5A.png">
+                    <div class="Container" id="imageSlide">
+                        <img src="shopping/shoe5A.png" class="slide">
+                        <img src="shopping/shoe5C.png" class="slide">
+                        <img src="shopping/shoe5B.png" class="slide">
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
                     <h3>adjapas</h3>
-                    <span>$3,999</span>
-                    <button onclick="" class="cart">add to cart</button>
+                    <span>$70</span>
+                    <button type="button" class="add-cart cart1">add to cart</button>
                 </div>
+     
                 <div class="RowItem1">
-                    <img src="shopping/shoe6A.png">
+                    <div class="Container" id="imageSlide2">
+                        <img src="shopping/shoe6A.png" class="slide">
+                        <img src="shopping/shoe6C.png" class="slide">
+                        <img src="shopping/shoe6B.png" class="slide">
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
                     <h3>GENG-GENG</h3>
-                    <span>$3,999</span>
-                    <button onclick="" class="cart">add to cart</button>
+                    <span>$50</span>
+                    <button type="button" class="add-cart cart2">add to cart</button>
                 </div>
                 <div class="RowItem1">
-                    <img src="shopping/shoe7A.png">
+                    <div class="Container" id="imageSlide3">
+                        <img src="shopping/shoe7A.png" class="slide">
+                        <img src="shopping/shoe7B.png" class="slide">
+                        <img src="shopping/shoe7C.png" class="slide">
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
                     <h3>SPARTA</h3>
-                    <span>$3,999</span>
-                    <button onclick="" class="cart">add to cart</button>
+                    <span>$90</span>
+                    <button type="button" class="add-cart cart3">add to cart</button>
                 </div>
                 <div class="RowItem1">
-                    <img src="shopping/shoe8A.png">
+                    <div class="Container" id="imageSlide4">
+                        <img src="shopping/shoe8A.png" class="slide">
+                        <img src="shopping/shoe8B.png" class="slide">
+                        <img src="shopping/shoe8C.png" class="slide">
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
                     <h3>Sheesh</h3>
-                    <span>$3,999</span>
-                    <button onclick="" class="cart">add to cart</button>
+                    <span>$85</span>
+                    <button type="button" class="add-cart cart4">add to cart</button>
                 </div>
             </div>
-            <div class="Row1">
+            <div class="Row2">
                 <div class="RowItem1">
-                    <img src="shopping/shoe1.png">
+                    <div class="Container" id="imageSlide4">
+                        <img src="shopping/shoe1.png" class="slide">
+                        <img src="shopping/shoe1A.png" class="slide">
+                        <img src="shopping/shoe1B.png" class="slide">
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
                     <h3>Nikee</h3>
-                    <span>$3,999</span>
-                    <button onclick="" class="cart">add to cart</button>
+                    <span>$99</span>
+                    <button type="button" class="add-cart cart5">add to cart</button>
                 </div>
                 <div class="RowItem1">
-                    <img src="shopping/shoe2.png">
+                    <div class="Container" id="imageSlide4">
+                        <img src="shopping/shoe2.png" class="slide">
+                        <img src="shopping/shoe2A.png" class="slide">
+                        <img src="shopping/shoe2B.png" class="slide">
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
                     <h3>xxx nike</h3>
-                    <span>$3,999</span>
-                    <button onclick="" class="cart">add to cart</button>
+                    <span>$45</span>
+                    <button type="button" class="add-cart cart6">add to cart</button>
                 </div>
                 <div class="RowItem1">
-                    <img src="shopping/shoe3.png">
+                    <div class="Container" id="imageSlide4">
+                        <img src="shopping/shoe3.png" class="slide">
+                        <img src="shopping/shoe3A.png" class="slide">
+                        <img src="shopping/shoe3B.png" class="slide">
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
                     <h3>villabong</h3>
-                    <span>$3,999</span>
-                    <button onclick="" class="cart">add to cart</button>
+                    <span>$65</span>
+                    <button type="button" class="add-cart cart7">add to cart</button>
                 </div>
                 <div class="RowItem1">
-                    <img src="shopping/shoe4.png">
+                    <div class="Container" id="imageSlide4">
+                        <img src="shopping/shoe4.png" class="slide">
+                        <img src="shopping/shoe4A.png" class="slide">
+                        <img src="shopping/shoe4B.png" class="slide">
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
                     <h3>Nikee Immortal</h3>
-                    <span>$3,999</span>
-                    <button onclick="" class="cart">add to cart</button>
+                    <span>$45</span>
+                    <button type="button" class="add-cart cart8">add to cart</button>
                 </div>
             </div>
         </div>
@@ -119,5 +180,7 @@
         </div>
     </footer>
     <script src="Login.js"></script>
+    <script src="Cart.js"></script>
+    <script src="ItemDetails.js"></script>
 </body>
 </html>

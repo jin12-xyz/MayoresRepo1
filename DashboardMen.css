@@ -21,10 +21,11 @@ li{
 a {
     text-decoration: none;
     color:#fff;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 a:hover{
-    color:orange;
+    color:yellow;
+    scale:1.05;
 }
 header{
     position:relative;
@@ -49,12 +50,12 @@ header{
     font-weight: bold;
     color:#fff;
     align-items: center;
-    margin-left:15px;
     
 }
 .logo h3{
-    padding-left: 10px;
+    padding-left: 5px;
     letter-spacing: 2px;
+    font-size: 1rem;
 }
 .navBar .logo img{
     height: 50px;
@@ -71,6 +72,29 @@ header{
     cursor:pointer;
     display: none;
     
+}
+.Cart_Profile{
+    display: flex;
+    justify-content: space-evenly;
+}
+.Cart img{
+    background-color: transparent;
+    height: 5vh;
+    border-radius: 25px;
+    background-color: white;
+}
+.Cart span{
+    color:red;
+    font-size:20px;
+    position: absolute;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.Cart button{
+    margin-right:20px;
+    position:relative;
+    border-radius: 25px;
+    background-color: none;
+    border:none;
 }
 .toggle_btn .MenuBar img{
     height: 20px;
@@ -106,20 +130,24 @@ header{
     background-color:transparent;
     border-radius: 10px;
     overflow: hidden;
-    z-index: 1;
+    z-index: 2;
 
 }
 .ProfileView{
-    width: 340px;
-    height:400px;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 450px;
     left:auto;
     right:50px;
+    
 }
 #imgbtn{
     border-radius: 50px;
     height: auto;
-    width:50px;
+    width:45px;
     background-color:#0097b2;
+    margin-right:20px;
 }
 #profile-button{
     background-color: transparent;
@@ -130,11 +158,16 @@ header{
     background-color:white;
 }
 .ProfileView iframe{
-    height:400px;
-    width:340px;
-    border-radius: 10px;
+    height:55vh;
+    max-width:70vw;
+    border-radius: 25px;
     border-color:none;
-    background-color: black;
+    padding-top:5%;
+    padding-right:5%;
+    padding-left:5%;
+    text-align: center;
+    margin-left:10px;
+    border:none; 
 }
 
 .ex{
@@ -154,6 +187,71 @@ header{
     border-radius: 10px;
     border: none;
 }
+/* Side Panel Cart */
+.MainBody.side-panel-open .side-panel {
+    display: block;
+}
+.side-panel{
+    position: absolute;
+    display: none;
+    margin-top:20px;
+    width: 40vw; 
+    height: auto; /* Maintain aspect ratio */
+    aspect-ratio: 16 / 9; /* Set desired aspect ratio */
+    padding:20px;
+    color:#fff;
+    background-image:linear-gradient(to bottom,#132839, #0097b2,lightgrey,lightgrey,lightgrey,lightgrey );
+    border-radius:10px;
+    box-shadow: 0 0 10px white;
+    left: auto;
+    right:10px;
+    z-index:2;
+    border:5px solid black;
+}
+.side-panel .panelHead{
+    position: absolute;
+    background-color:black;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px white;
+    top:0px;
+    left:0px;
+    height: 100px;
+    width: 100%;
+    z-index: -1;
+}
+.side-panel-open .side-panel {
+    display: initial;
+  }
+  .side-panel-toggle {
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+  .side-panel .CartFrame{
+    margin:0;
+    padding:0;
+    object-fit: contain;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .side-panel .CartFrame iframe{
+    object-fit: contain;
+    width: 100%;
+    height:70vh;
+    border:none;
+  }
+  /* responsive side panel*/
+  @media (max-width: 768px) {
+    .side-panel {
+        width: 90vw; 
+        height: auto;
+        padding: 10px;
+    }
+    .side-panel .panelHead{
+        height:15%;
+    }
+    
+}
 
 /*Dropdown*/
 .Dropdown{
@@ -170,7 +268,7 @@ header{
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .Dropdown.open{
-    height: 300px;
+    height: 350px;
 }
 .Dropdown li{
     padding:0.7rem;
@@ -192,10 +290,15 @@ header{
 
     .navBar .toggle_btn{
         display: block;
+        margin-right:10px;
     }
     .Dropdown{
         display: block;
         z-index: 1;
+    }
+    .Cart_Profile{
+        position: absolute;
+        right:40px;
     }
 }
 @media (max-width:576px){
@@ -213,9 +316,9 @@ header{
 .Row h1{
     position: absolute;
     margin-top: auto;
+    margin-left:35vw;
     color:yellow;
-    margin-left:25%;
-    font-size: 2vw;
+    font-size: 1.5vw;
     border:2px solid rgb(249, 249, 249);
     letter-spacing: 5px;
     padding:10px 30px 10px 30px;
@@ -229,35 +332,135 @@ header{
     justify-content:space-evenly;
     margin-top: 90px;
     flex-wrap: wrap;
+    padding: 0px;
+    margin-bottom: 0;
+
+}
+.MainBody .Row .Row2{
+    position: relative;
+    display:flex;
+    justify-content:space-evenly;
+    margin-top: 90px;
+    flex-wrap: wrap;
+    margin-bottom: 0;
 }
 .Row img{
-    height: 200px;
+    height: 25vh;
+    max-width:auto;
     border-radius: 25px;
     background-color: transparent;
     box-shadow: 2px 0 30px black;
-}.Row .RowItem1{
+}
+.Row .RowItem1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 20px;
     margin-bottom: 10px;
     color: #fff;
+    box-shadow: 2px 0 30px black;
+    border-radius: 25px;
+    transition: transform 0.5s ease-in-out;
     
 }
 .Row .RowItem1:hover{
-    transform: scale(1.1);
-    box-shadow: 5px 3px 20px #132839;
+    transform: scale(1.05);
     border-radius:15px;
 }
-.RowItem1 .cart{
-    padding:5px;
+.RowItem1 .add-cart{
+    padding:10px;
     border-radius: 25px;
-    margin-left: 30px;
     background-color: red;
     color:#fff;
     border:none;
     box-shadow: 1px 2px 3px black;
+    width: 50%;
+    margin-right: auto;
+    margin-left:50%;
 }
+.RowItem1 .add-cart:hover{
+    background-color: yellow;
+    color:black;
+}
+
 .RowItem1 span{
     color:yellow;
 }
+/*Responsive Items */
+@media screen and (max-width: 720px), screen and (max-width:920){
+    .Row h1{
+        margin-left:10%;
+        margin-bottom: 0;
+        padding:10px 50px;
+        font-size: 4vw;
+        letter-spacing: normal;
+    }
+    .Row1 .RowItem1 img{
+        max-width: auto;
+        height:30vw;
+    }
+    .Row1 .RowItem1{
+        padding-top:55px;
+        background-color: none;
+        box-shadow: none;
+    }
+    .Row1{
+        margin-bottom: 0;
+        background-color: none;
+        box-shadow: none;
+    }
+    .Row2 .RowItem1 img{
+        max-width: auto;
+        height:30vw;
+    }
+    .Row2 .RowItem1{
+        padding-bottom: 50px;
+        background-color: none;
+        box-shadow: none;
+    }
+
+}
+/* Product Details */
+.Container {
+    position: relative; 
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius:25px;
+    margin:0px;
+  }
+  
+  .slide {
+    display: none; 
+    width: 100%; 
+    height: 100%;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%); 
+    width: auto;
+    padding: 2px;
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    z-index: 1;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  .prev {
+    left: 0;
+  }
 /*Footer Section */
 .mainFoot{
     background-color: black;
