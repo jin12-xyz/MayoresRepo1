@@ -68,7 +68,7 @@ let products = [
     inCart:0
 },
 {
-    Name: "Roses Sprint",
+    Name: "Roses",
     tag:"Wshoe4A",
     price: 75,
     inCart:0
