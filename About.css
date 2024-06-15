@@ -253,7 +253,17 @@ iframe{
     .side-panel .panelHead{
         height:15%;
     }
-    
+    .Cart{
+        margin-left:110px;
+        right:0px;
+    }
+    .side-panel .CartFrame{
+        left:0px;
+        right:auto;
+    }
+    .side-panel .CartFrame iframe{
+        margin-left:0px;
+    }
 }
 
 /*Dropdown*/
