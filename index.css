@@ -428,7 +428,7 @@ header{
     }
 }
 /*Responsive*/
-@media screen and (max-width: 720px), screen and (max-width:920px) {
+@media screen and (max-width: 720px){
     .Main{
         border:3px solid black;
     }
