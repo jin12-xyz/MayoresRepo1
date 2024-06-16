@@ -118,3 +118,16 @@ function displayProfile() {
     UserAddress.innerHTML = "ADDRESS: " + address;
 }
 document.addEventListener('DOMContentLoaded', displayProfile);
+
+//logout button
+function logoutFunction() {
+    alert("Logout successful!");
+    window.parent.location.href = "index.html";
+}
+
+//hide logout button
+window.addEventListener('DOMContentLoaded', (event) => {
+    if(window.parent.location.href.includes('index.html')) {
+        document.getElementById('logoutBTN').style.display = 'none';
+    }
+});

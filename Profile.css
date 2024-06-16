@@ -3,11 +3,17 @@
     padding:0;
     box-sizing: border-box;
 }
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .MainBody{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 .ProfileAcct{
     position: relative;
@@ -44,4 +50,11 @@
   margin-left:auto;
   background-color: aqua;
   border-radius:50px;
+}
+#logoutBTN{
+  border-radius:25px;
+  color:white;
+  background-color: black;
+  padding:5px;
+  margin-top:10px;
 }
