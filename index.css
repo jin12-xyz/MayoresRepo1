@@ -175,7 +175,7 @@ header{
 .ProfileView .ex{
     position: absolute;
     height: 20px;
-    background-color: red;
+    background-color: rgb(163, 155, 155);
     border-radius: 10px;
 }
 .ProfileView button{
