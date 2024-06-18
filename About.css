@@ -126,29 +126,23 @@ iframe{
     position: absolute;
     display: none;
     width: 300px;
-    height: 410px;
+    height: 400px;
     top:25%;
     left:auto;
     right:100px;
+    backdrop-filter:blur(25px);
+    background-color:transparent;
     border-radius: 10px;
     overflow: hidden;
-    z-index: 1;
-
-}
-.ProfileView{
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 450px;
-    left:auto;
-    right:50px;
-    
+    z-index: 2;
 }
 #imgbtn{
     border-radius: 50px;
     height: auto;
-    width:50px;
+    width:45px;
     background-color:#0097b2;
+    margin-right:20px;
+ 
 }
 #profile-button{
     background-color: transparent;
@@ -159,18 +153,18 @@ iframe{
     background-color:white;
 }
 .ProfileView iframe{
-    height:55vh;
-    max-width:70vw;
-    border-radius: 25px;
-    border-color:none;
-    padding-top:5%;
-    padding-right:5%;
-    padding-left:5%;
-    text-align: center;
-    margin-left:10px;
+    width: 300px;
+    height: 450px;
+    top:20px;
+    left:auto;
+    right:50px; 
+    backdrop-filter:blur(100%);  
     border:none;
+    background-color: #132839;
 }
-.ex{
+
+.ProfileView .ex{
+    position: absolute;
     height: 20px;
     background-color: red;
     border-radius: 10px;
@@ -186,6 +180,18 @@ iframe{
     z-index:1;
     border-radius: 10px;
     border: none;
+}
+@media (max-width: 768px){
+    .ProfileView{
+        left:10vw;
+
+    }
+}
+@media (max-width:576px){
+    .ProfileView{
+        left:10vw;
+
+    }
 }
 /* Side Panel Cart */
 .MainBody.side-panel-open .side-panel {
