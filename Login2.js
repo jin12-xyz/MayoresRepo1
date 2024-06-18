@@ -131,3 +131,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
         document.getElementById('logoutBTN').style.display = 'none';
     }
 });
+
+function closeIframe(iframeId) {
+  var iframe = document.getElementById(iframeId);
+  if(iframe) {
+    iframe.parentNode.removeChild(iframe);
+  } else {
+    console.log("Iframe not found");
+  }
+}
