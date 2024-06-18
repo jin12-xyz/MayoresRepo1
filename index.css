@@ -95,7 +95,7 @@ header{
     scale:0.95;
 }
 /*Form Login/Register */
-.LoginView, .RegView{
+.LoginView, .RegView, .ProfileView{
     position: absolute;
     display: none;
     width: 300px;
@@ -109,22 +109,6 @@ header{
     overflow: hidden;
     z-index: 1;
 
-}
-.ProfileView{
-    position: absolute;
-    display: none;
-    margin-left: auto;
-    width: 100%;
-    height: 100%;
-    transform: translate(-50%, -50%);
-    background-color:transparent;
-    border-radius: 10px;
-    overflow: hidden;
-    z-index: 2;
-    top:70%;
-    left:50%;
-    border:2px solid white;
-    
 }
 #imgbtn{
     border-radius: 50px;
@@ -141,16 +125,13 @@ header{
     background-color:white;
 }
 .ProfileView iframe{
-    position: absolute;
-    width: 47.5vw;
+    width: 300px;
     height: 450px;
-    margin-left:auto;
-    right:1vw;
-    align-items: right;
-    border-color:none;
-    text-align: center;
+    top:20px;
+    left:auto;
+    right:50px; 
+    backdrop-filter:blur(100%);  
     border:none;
-    border:2px solid blue;
 }
 .LoginView iframe{
     width: 300px;
@@ -158,7 +139,9 @@ header{
     top:20px;
     left:auto;
     right:50px; 
-    backdrop-filter:blur(25px);  
+    backdrop-filter:blur(100%);
+    border:none;
+
 }
 .RegView{
     height: 510px;
@@ -169,7 +152,8 @@ header{
     top:20px;
     left:auto;
     right:50px; 
-    backdrop-filter:blur(25px);  
+    backdrop-filter:blur(100%); 
+    border:none;
 }
 .ex{
     height: 20px;
@@ -181,18 +165,8 @@ header{
     height: 20px;
     border-radius: 10px;
 }
-.ProfileView button{
-    position: absolute;
-    background-color: transparent;
-    top: 0%;
-    bottom:auto;
-    margin-left:auto;
-    right:17%;
-    z-index:1;
-    border-radius: 10px;
-    border: none;
-}
-.LoginView button, .RegView button{
+
+.LoginView button, .RegView button, .ProfileView button{
     position: absolute;
     background-color: transparent;
     margin-top: 0%;
@@ -204,6 +178,7 @@ header{
     border-radius: 10px;
     border: none;
 }
+
 
 
 /*Dropdown*/
@@ -248,7 +223,7 @@ header{
         display: block;
         z-index: 1;
     }
-    .LoginView, .RegView{
+    .LoginView, .RegView, .ProfileView{
         left:10vw;
     }
 
@@ -257,10 +232,6 @@ header{
     .Dropdown{
         left:2rem;
         width: unset;
-    }
-    .ProfileView iframe{
-        width: 80vw;
-        height: 450px;
     }
 }
 .Main{

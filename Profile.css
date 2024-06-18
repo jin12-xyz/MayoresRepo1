@@ -24,20 +24,29 @@ body{
     height:400px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: white;
     text-shadow: 5px 1px 5px black;
-    background-image:linear-gradient(to top right, black, #0097b2);
     background-size: cover;
+   
     
 }
 .ProfileAcct h2{
     text-align:center;
-    padding:10px;
+    padding:5px;
     color:yellow;
-    background-color:black;
     border-radius:10px;
-    box-shadow: 1px 1px 3px white;
+    background-color: black;
+    
+}
+.div1{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 100%;
+ 
+}
+.div2{
+  padding:25px;
 }
 .ProfileAcct .prf{
   padding:20px 10px;
@@ -46,7 +55,7 @@ body{
 }
 .ProfileAcct img{
   height:50px;
-  margin-right: 400px;
+  margin-right: 115px;
   margin-left:auto;
   background-color: aqua;
   border-radius:50px;
