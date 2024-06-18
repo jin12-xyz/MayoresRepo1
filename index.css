@@ -142,7 +142,7 @@ header{
 .ProfileView iframe{
     height:50%;
     width:50%;
-    margin-left:50%;
+    margin-left:50vw;
     margin-right:auto;
     border-color:none;
     text-align: center;
@@ -175,7 +175,6 @@ header{
 .ProfileView .ex{
     position: absolute;
     height: 20px;
-    background-color: rgb(163, 155, 155);
     border-radius: 10px;
 }
 .ProfileView button{
@@ -183,8 +182,8 @@ header{
     background-color: transparent;
     top: 0%;
     bottom:auto;
-    left:auto;
-    margin-right:0px;
+    margin-left:auto;
+    right:17%;
     z-index:1;
     border-radius: 10px;
     border: none;
@@ -261,19 +260,15 @@ header{
         margin-left:0%;
     }
     .ProfileView button{
-        margin-left:auto;
-        right:110px;
         background-color: #fff;
+        margin-left:auto;
+        right:23%;
     }
 }
 @media (max-width:576px){
     .Dropdown{
         left:2rem;
         width: unset;
-    }
-    .ProfileView button{
-        margin-left:auto;
-        right:110px;
     }
 }
 .Main{
