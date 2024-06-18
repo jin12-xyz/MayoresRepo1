@@ -184,7 +184,7 @@ header{
     top: 0%;
     bottom:auto;
     left:auto;
-    right:278px;
+    margin-right:0px;
     z-index:1;
     border-radius: 10px;
     border: none;
