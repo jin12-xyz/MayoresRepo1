@@ -260,8 +260,9 @@ header{
         height: 50%;
         margin-left:0%;
     }
-    .ProfileView .ex{
-        margin-left:170px;
+    .ProfileView button{
+        margin-left:auto;
+        right:110px;
     }
 }
 @media (max-width:576px){
