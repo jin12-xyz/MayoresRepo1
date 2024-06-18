@@ -270,6 +270,10 @@ header{
         left:2rem;
         width: unset;
     }
+    .ProfileView button{
+        margin-left:auto;
+        right:110px;
+    }
 }
 .Main{
     position: relative; 
