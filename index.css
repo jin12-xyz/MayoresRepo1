@@ -15,17 +15,17 @@ body{
     font-family: 'Lastica';
     background-position: center;
 }
-li{
+.Options li{
     list-style: none;
 }
-a {
+.Options li a {
     text-decoration: none;
     color:#fff;
     font-size: 1.5rem;
 }
-a:hover{
+.Options li a:hover{
     color:yellow;
-    scale:1.5;
+    scale:1.05;
 }
 header{
     position:relative;
@@ -388,6 +388,10 @@ header{
     margin-left: 20%;
     margin-top:25vw;
     margin-top:50vh;
+    transition: transform 0.5s ease-in-out;
+}
+.slowfade .btn2:hover{
+    transform: scale(1.05);
 }
 .slowfade a{
     text-decoration: none;
