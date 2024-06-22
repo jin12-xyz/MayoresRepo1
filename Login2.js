@@ -69,10 +69,10 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem("name", Fname);
         localStorage.setItem("address", address);
 
-        // Log in user
+
         login(username, password);
         
-        // Notify the user of successful registration
+       
         alert("Registration successful!");
     });
 });
