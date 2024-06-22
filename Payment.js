@@ -52,7 +52,7 @@ function updatePayNowButton(isValid) {
 function CashOpt(){
     const CashOption = document.getElementById('cash-option');
     if(CashOption.checked){
-        alert("cash on delivery. Items will be delivered to your location soon");
+        alert("cash on delivery successfull!\n Please prepare exact amount upon delivery. \n Thank you!");
         localStorage.removeItem("productsInCart");
         localStorage.removeItem("cartNumbers");
         localStorage.removeItem("totalCost");
@@ -65,7 +65,7 @@ function CashOpt(){
 }
 
 function handlePayment() {
-    alert('Successfully charged your account.');
+    alert('Transaction Completed. \n Thank your for purchasing!');
     localStorage.removeItem("productsInCart");
     localStorage.removeItem("cartNumbers");
     localStorage.removeItem("totalCost");
