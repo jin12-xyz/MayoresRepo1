@@ -1,14 +1,17 @@
-const Card_Option = document.getElementById('card-option')
-const CardPayment = document.querySelector('.CardPayment')
+const Card_Option = document.getElementById('card-option');
+const CardPayment = document.querySelector('.CardPayment');
+const Cash_Option = document.getElementById('cash-option');
 
-Card_Option.addEventListener('change', () =>{
-    if(Card_Option.checked){
-        CardPayment.style.display ='block';
+function updateCardPaymentDisplay() {
+    if (Card_Option.checked) {
+        CardPayment.style.display = 'block';
+    } else {
+        CardPayment.style.display = 'none';
     }
-    else {
-        CardPayment.style.display ='none';
-    }
-});
+}
+
+Card_Option.addEventListener('change', updateCardPaymentDisplay);
+Cash_Option.addEventListener('change', updateCardPaymentDisplay);
 
 function validateCardNumber() {
     const cardNumberInput = document.getElementById('card_no');

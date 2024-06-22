@@ -6,15 +6,16 @@ body{
   border-radius: 25px;
 }
 .payment-container {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
     width: 60%;
-    height: 80vh;
+    height: 82vh;
     margin: 50px auto;
     background-color: #f0f0f0;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius:25px;
+    margin-top: 20px;
     
   }
   
