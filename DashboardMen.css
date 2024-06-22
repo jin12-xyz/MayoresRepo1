@@ -541,7 +541,11 @@ header{
 .socialMedia ul li{
     display: inline-block;
     list-style: none;
-    padding:5px;
+    padding-left:5px;
+}
+.socialMedia ul li:hover{
+    background-color: yellow;
+    border-radius:50px;
 }
 .footer1 .socialMedia img{
     border-radius:50px;

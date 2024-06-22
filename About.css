@@ -502,6 +502,10 @@ iframe{
     list-style: none;
     padding:5px;
 }
+.socialMedia ul li:hover{
+    background-color: yellow;
+    border-radius:50px;
+}
 .footer1 .socialMedia img{
     border-radius:50px;
     background-color: #fff;
