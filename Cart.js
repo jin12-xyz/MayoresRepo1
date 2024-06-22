@@ -133,6 +133,7 @@ function cartNumbers(product){
         setItems(product);
         totalCost(product);
         parent.location.reload();
+        alert('item added to cart.');
     }
     refreshIframe();
     

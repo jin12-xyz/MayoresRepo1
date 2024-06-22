@@ -15,10 +15,10 @@ body{
     font-family: 'Lastica';
     background-position: center;
 }
-.Options li{
+ li{
     list-style: none;
 }
-.Options li a {
+a {
     text-decoration: none;
     color:#fff;
     font-size: 1.5rem;
@@ -31,6 +31,8 @@ header{
     position:relative;
     padding:4rem 0.5rem;
     background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -375,7 +377,7 @@ header{
 }
 .slowfade .btn2{
     position: absolute;
-    background-color:red;
+    background-image:url("images/AI6.png");
     color:white;
     text-shadow: 5px 5px 5px black;
     padding:20px 10px;
@@ -442,10 +444,12 @@ header{
     .column1, .column2, .slowfade {
       width: 100%;
     }
+  
     .column2 {
         position: absolute;
         top: 50px;
         left: 20px;
+        
       }
     .slowfade {
         top:0px;
@@ -460,11 +464,12 @@ header{
     .divider{
         position:absolute;
         z-index: -1;
-        background-image:linear-gradient(to bottom right, #0097b2, black, brown);
+        background-image: url("images/AI9.png");
         backdrop-filter:blur(100px);
-        height: 50vh;
+        height: 100vh;
         width:100vw;
-        top:54.5%;
+        top:53.5%;
+        box-shadow: 1px 1px 10px white;
 
     }
     .slowfade .slide {
@@ -489,6 +494,7 @@ header{
         width:50vw;
         bottom:5vh;
         margin-left:0px;
+        box-shadow: 1px 1px 10px white;
     }
     .content1 .column1 h1{
         margin-right: auto;
@@ -503,6 +509,7 @@ header{
     .column1 img{
         object-fit: contain;
         margin-top: 0px;
+     
     }
     .slide .item_details{
         padding-top:0px;

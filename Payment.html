@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="Payment.css">
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Payment Options</h2>
+        <h2>Amount: $<span id="topay"> to pay</span></h2>
+        <form action="" method="post">
+            <label>Card Payment:</label>
+            <input type="radio" name="payment-option" value="card" id="card-option"> <span>Card</span>
+                <div class="CardPayment">
+                    <label for="card_no">Card Number</label>
+                    <input type="text" id="card_no" placeholder="000-000-000" onblur="validateCardNumber()">
+                    <label for="card_xp">Card Expiration</label>
+                    <input type="text" id="card_xp" placeholder="month/year" onblur="validateCardExpiration()">
+                    <button type="submit" id="payNowButton" onclick="handlePayment()" disabled >Pay Now</button>
+                </div>
+                <hr>
+            <label>Cash on Delivery:</label>
+            <input type="radio" name="payment-option" value="cash" id="cash-option"> <span>COD</span>
+            <button type="submit" onclick="CashOpt(); return false">Place Order</button>
+        </form>
+        <button onclick="Close()">close</button>
+    </div>
+    <script src="Payment.js"></script>
+</body>
+</html>

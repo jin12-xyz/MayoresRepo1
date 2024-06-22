@@ -144,6 +144,12 @@ header .Cart{
 .baslketTotal{
     width:10%;
 }
+#payment{
+    border-radius:25px;
+    padding:10px 50px;
+    margin-top:30px;
+    
+}
 @media screen and (max-width: 768px), screen and (max-width:576px){
     .products{
         margin-left:0px;

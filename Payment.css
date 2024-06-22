@@ -1,0 +1,55 @@
+body{
+  width:100%;
+  height:100%;
+  background-image:linear-gradient(to bottom right,#0097b2,#132839,#132839,#132839,rgb(79, 29, 29), rgb(79, 29, 29));
+  overflow: hidden;
+  border-radius: 25px;
+}
+.payment-container {
+  display: flex;
+  flex-direction: column;
+    width: 60%;
+    height: 80vh;
+    margin: 50px auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius:25px;
+    
+  }
+  
+  .payment-container h2 {
+    margin-top: 0;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+    
+    
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:20px 0px;
+    display: block;
+    margin-right:auto;
+    margin-left:90px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  .CardPayment{
+    display: none;
+  }
